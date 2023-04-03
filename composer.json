@@ -1,0 +1,33 @@
+{
+    "name": "humble23/design-patterns-practices",
+    "description": "just a few examples of how to implement design patterns in php",
+    "keywords": ["php", "patterns"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edilson Fernandes",
+            "email": "edilsonfernandes312@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Humble23\\DesignPatterns\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Humble23\\DesignPatterns\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/puli/issues/issues"
+    }
+}
