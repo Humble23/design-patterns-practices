@@ -1,0 +1,7 @@
+O padrão Abstract Factory poder ser usado para criar unidades de um jogo. Na criação de um jogo, é comum ter diferentes tipos de unidades, como soldados, veículos, criaturas, entre outros. Cada tipo de unidade tem suas próprias características, habilidades e comportamentos, e pode ser necessário utilizar diferentes objetos para representar essas unidades no jogo.
+
+Com o uso do padrão Abstract Factory, é possível criar uma fábrica para cada tipo de unidade, que irá criar os objetos necessários para representar essa unidade no jogo. Cada fábrica pode ser responsável por criar objetos como modelos 3D, animações, sons, inteligência artificial, entre outros.
+
+Além disso, é possível criar uma fábrica para cada facção ou raça do jogo, permitindo que cada uma tenha suas próprias unidades com características específicas. Cada fábrica pode ser responsável por criar objetos diferentes para cada unidade, de acordo com suas características e habilidades.
+
+Com o uso do padrão Abstract Factory, é possível criar um sistema de criação de unidades flexível e adaptável, capaz de lidar com diferentes tipos de unidades e facções do jogo. O sistema também pode ser facilmente estendido para incluir novas unidades e facções no jogo.
