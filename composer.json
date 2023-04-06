@@ -15,7 +15,8 @@
     "autoload": {
         "psr-4": {
             "Humble23\\DesignPatterns\\": "src/"
-        }
+        },
+        "files": ["src/helpers.php"]
     },
     "autoload-dev": {
         "psr-4": {

@@ -9,10 +9,17 @@ class FormBuilder implements FormBuilderInterface
     private string $fields = '';
     private string $submitButton = '<input type="submit" value="Submit">';
 
-    private function setInputLabel(string $label, string $input): string
+    public function __construct(
+        private string $action = '',
+        private string $method = 'post',
+    ) {}
+
+    private function setInputLabel(string $label, string $input, bool $breakLine = true): string
     {
+        $breakLine = $breakLine ? '<br>' : '';
+
         return "<div>
-            <label for=\"{$label}\">{$label}</label>
+            <label for=\"{$label}\">{$label}</label>{$breakLine}
             $input
         </div>";
     }
@@ -77,9 +84,12 @@ class FormBuilder implements FormBuilderInterface
         $input = '';
 
         foreach ($options as $key => $value) {
+            $name = slugify($name);
+
             $input .= $this->setInputLabel(
                 $value,
-                "<input type=\"checkbox\" id=\"$value\" name=\"{$name}\" value=\"{$value}\">"
+                "<input type=\"checkbox\" id=\"$value\" name=\"{$name}\" value=\"{$value}\">",
+                false
             );
         }
 
@@ -91,9 +101,36 @@ class FormBuilder implements FormBuilderInterface
         return $this;
     }
 
+    public function setSubmitButton(string $value): self
+    {
+        $this->submitButton = "<input type=\"submit\" value=\"{$value}\">";
+
+        return $this;
+    }
+
+    public function addSelect(string $name, array $options = [], ?string $value = null): self
+    {
+        $select = "<select name=\"slugify($name)\" value=\"{$value}\">";
+
+        foreach ($options as $key => $value) {
+            $name = slugify($name);
+
+            $select .= "<option value=\"{$key}\">{$value}</option>";
+        }
+
+        $select .= "</select>";
+
+        $this->fields .= $this->setInputLabel(
+            $name,
+            $select
+        );
+
+        return $this;
+    }
+
     public function buildForm(): string
     {
-        return "<form>
+        return "<form action=\"{$this->action}\" method=\"{$this->method}\">
             {$this->fields}
             {$this->submitButton}
         </form>";

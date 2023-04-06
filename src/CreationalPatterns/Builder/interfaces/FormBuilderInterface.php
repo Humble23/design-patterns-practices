@@ -18,11 +18,9 @@ interface FormBuilderInterface
     
     public function addCheckbox(string $name, ?array $options = []): self;
     
-    // public function addRadioButton(string $name, ?string $value = null): self;
+    public function setSubmitButton(string $value): self;
     
-    // public function addSubmitButton(?string $value = null): self;
-    
-    // public function addSelect(string $name, ?string $value = null, ?array $options = []): self;
+    public function addSelect(string $name, array $options = [], ?string $value = null): self;
 
     public function buildForm(): string;
 }
