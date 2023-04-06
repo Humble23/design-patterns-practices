@@ -1,5 +1,5 @@
 # Bem-vindo ao meu repositório de práticas de padrões de projeto!
-Este repositório é uma coleção de práticas pessoais desenvolvidas para estudar e aplicar padrões de projeto em diferentes situações. Aqui, você encontrará exemplos de código e descrições dos problemas que geralmente esse padrão resolve.
+Este repositório é uma coleção de práticas pessoais desenvolvidas para estudar e aplicar padrões de projeto em diferentes situações. Aqui, você encontrará exemplos simples de código e descrições dos problemas que geralmente esse padrão resolve.
 
 Cada pasta dentro do ```/src``` agrupa uma categoria de padrões de projetos, contendo cada um dos padrões mais comumente utilizados, onde você encontrará um exemplo de código que implementa esse padrão de projeto. Cada exemplo é acompanhado por uma descrição do problema que ele resolve, explicando por que o padrão de projeto escolhido é a solução ideal.
 
