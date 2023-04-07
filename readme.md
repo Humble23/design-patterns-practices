@@ -13,7 +13,7 @@ Referência: [refactoring.guru](https://refactoring.guru/)
 - Factory Method
 - Abstract Factory
 - Builder
-- Prototype - _Em progresso_
+- Prototype
 - Singleton - _Em progresso_
 
 ### Padrões Estruturais - _Em progresso_
