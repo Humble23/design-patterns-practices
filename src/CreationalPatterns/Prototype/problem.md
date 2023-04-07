@@ -1,0 +1,5 @@
+Suponha que você esteja desenvolvendo um software de gerenciamento de projetos, onde os usuários podem criar e personalizar vários tipos de tarefas. Neste caso, o padrão de projeto Prototype pode ser usado para criar um conjunto de objetos "protótipos" que representam diferentes tipos de tarefas.
+
+Por exemplo, você pode criar protótipos para tarefas de desenvolvimento de software, tarefas de design gráfico, tarefas de marketing, entre outros. Quando um usuário cria uma nova tarefa, o software pode fazer uma cópia do protótipo correspondente e personalizá-la com base nas escolhas do usuário, como prazos, responsáveis, prioridades, entre outros.
+
+Dessa forma, o padrão Prototype permite que você crie novas tarefas com base em protótipos existentes, evitando a necessidade de criar cada tarefa do zero. Além disso, o padrão permite que o usuário personalize a tarefa de forma flexível, sem precisar entender a complexidade da criação da tarefa do zero.
