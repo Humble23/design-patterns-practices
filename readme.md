@@ -9,12 +9,12 @@ Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato com
 
 Referência: [refactoring.guru](https://refactoring.guru/)
 
-### Padrões Criacionais - _Em progresso_
+### Padrões Criacionais
 - Factory Method
 - Abstract Factory
 - Builder
 - Prototype
-- Singleton - _Em progresso_
+- Singleton
 
 ### Padrões Estruturais - _Em progresso_
 - Adapter - _Em progresso_
